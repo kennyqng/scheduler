@@ -1,3 +1,8 @@
+This application is to schedule tasks for today by each hour.
+Enter the task and click save.
+Task will be saved even after browser is refreshed or navigated away from page.
+
+
 # 05 Third-Party APIs: Work Day Scheduler
 
 Create a simple calendar application that allows the user to save events for each hour of the day. This app will run in the browser and feature dynamically updated HTML and CSS powered by jQuery.

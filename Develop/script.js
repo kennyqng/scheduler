@@ -1,4 +1,8 @@
-let m = moment("12:30", "h");
+let m = moment();
+// test color past, present, future
+// m = moment("13:30", "h");
+
+// variable to set time for each slot
 var setM = moment("9:00", "h");
 
 $("#currentDay").text(moment().format("dddd, MMMM D"));
@@ -28,12 +32,9 @@ for (var i =0; i < 9; i++){
     // color code past, present, and future slots
     if(setM.isBefore(m)){
         newInput.attr("class", "past");
-        console.log("This div "+i+"is BEFORE current time");
     }
     else if(setM.isAfter(m)){
         newInput.attr("class", "future");
-        console.log("This div "+i+"is AFTER current time");
-
     }
     else{
         newInput.attr("class", "present");
